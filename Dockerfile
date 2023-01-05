@@ -6,4 +6,4 @@ RUN chown -R node:node /home
 COPY --chown=node:node . .
 COPY /app .
 USER node
-EXPOSE 8000
+EXPOSE 8000 8080
