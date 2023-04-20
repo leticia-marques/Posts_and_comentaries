@@ -4,55 +4,12 @@ import styles from "./Post.module.css"
 import {format, formatDistanceToNow} from "date-fns";
 import ptBR from "date-fns/locale/pt-BR"
 import { useState } from "react";
-// export function Post()
-// {
-//     return  (
-//         <article className={styles.post}>
-//            <header>
-//                <div className={styles.author}>
-//                    <Avatar 
-//                     src="https://veja.abril.com.br/wp-content/uploads/2016/06/imperdivel-2010-shrek-original.jpeg?quality=70&strip=info&resize=850,567" 
-//                      />
-//                     <div className={styles.authorInfo}>
-//                         <strong>Shrek</strong>
-//                         <span>Amassador de Lords Farquaads</span>
-//                     </div>
-//                 </div>
-
-//                 <time title="11 de maio às 08:00" dateTime="2022-05-11 08:13:30">Publicado há 1h</time>
-//             </header>
-
-//              <div className={styles.content}>
-//                  <p>Fala galeraa!!!</p>
-//                  <p>Shrek aqui. Por favor saiam todos do meu pântano.</p>
-//                  <p><a href="">lord.farquaad/sitio</a> Um lugar pra vcs ficarem e vazarem daqui</p>
-//                  <p><a href="">#freePantano #pinoquiehesquisito #osTresRatosSaoUmaAlusaoAoBeeGees?</a></p>
-//              </div>
-
-//              <form className={styles.commentForm} action="">
-//                 <strong>Deixe seu comentário</strong>
-
-//                 <textarea 
-//                     placeholder="Deixe um comentário"
-//                 />
-//                 <footer>
-//                     <button type="submit">Comentar</button>
-//                 </footer>
-//              </form>
-
-//              <div className={styles.commentList}>
-//                 <Comment />
-//              </div>
-//         </article>
-//     )  
-// }
-
 const comments = [1,2,3];
 
 export function Post(props)
 {
     const [comments, setComments] = useState([
-        "Foda-se"
+        "Não"
     ]);
     
     const [newComment, setNewCommentText] = useState("");
